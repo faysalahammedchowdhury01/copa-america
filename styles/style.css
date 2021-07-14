@@ -45,7 +45,7 @@ p {
   width: 50%;
 }
 
-/* button styles */
+/* Button Styles */
 .button {
   font-weight: 500;
   color: #ffffff;
@@ -70,7 +70,7 @@ p {
   border-color: #ffffff;
 }
 
-/* banner styles */
+/* Banner Styles */
 #banner-area {
   background-color: #10437a;
   color: #ffffff;
@@ -91,4 +91,32 @@ p {
 
 #banner-area:hover .banner-image {
   transform: scale(0.95);
+}
+
+/* Players Styles */
+#players-area {
+  padding: 70px 0;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.player {
+  padding: 15px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+}
+
+.player-name {
+  color: #18191f;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.player-description {
+  color: #6c6c6c;
+  margin-bottom: 15px;
 }
