@@ -208,3 +208,29 @@ p {
   border: 2px solid #e02c6d;
   transition: all 0.3s ease;
 }
+
+/* Footer Styles */
+#footer-area {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 480px;
+  margin: auto;
+  line-height: 0;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a i {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+  color: #969bab;
+  background-color: #e7e7e8;
+  margin: 0 5px;
+}
