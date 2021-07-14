@@ -152,7 +152,7 @@ p {
 
 /* Stats Styles */
 #stats-area {
-  padding: 60px 0 80px;
+  padding: 60px 0 80px 0;
   background-color: #10437a;
 }
 
@@ -198,7 +198,6 @@ p {
 .newsletter-form {
   display: flex;
   flex-direction: column;
-  margin-top: 25px;
 }
 
 .newsletter-input {
