@@ -192,13 +192,13 @@ p {
   margin-left: 16px;
 }
 
-.blog-title {
-  font-weight: 700;
-}
-
 .blog-published-time {
   font-size: 12px;
   color: #1e1d38;
+}
+
+.blog-title {
+  font-weight: 700;
 }
 
 .blog-author {
