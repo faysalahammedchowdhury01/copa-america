@@ -27,3 +27,68 @@ img {
 p {
   line-height: 26px;
 }
+
+/* Utilities  */
+.container {
+  width: 1080px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.half-width {
+  width: 50%;
+}
+
+/* button styles */
+.button {
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #e02c6d;
+  padding: 10px 25px;
+  border: 2px solid #e02c6d;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button-icon {
+  margin-left: 8px;
+}
+
+.button:hover {
+  color: #e02c6d;
+  background-color: #ffffff;
+}
+
+.button-hover-white-border:hover {
+  border-color: #ffffff;
+}
+
+/* banner styles */
+#banner-area {
+  background-color: #10437a;
+  color: #ffffff;
+  padding: 90px 0;
+  transition: transform 0.5s;
+}
+
+.banner-heading {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 80px;
+  margin-bottom: 30px;
+}
+
+.banner-image {
+  transition: transform 0.3s ease;
+}
+
+#banner-area:hover .banner-image {
+  transform: scale(0.95);
+}
