@@ -45,6 +45,10 @@ p {
   width: 50%;
 }
 
+.section-title {
+  margin-bottom: 25px;
+}
+
 .heading {
   color: #0a0826;
   font-size: 48px;
@@ -152,10 +156,6 @@ p {
   background-color: #10437a;
 }
 
-.stats {
-  margin-top: 25px;
-}
-
 .stats-box {
   width: 25%;
   margin: 0 10px;
@@ -207,6 +207,10 @@ p {
   padding: 10px 25px;
   border: 2px solid #e02c6d;
   transition: all 0.3s ease;
+}
+
+.newsletter .button {
+  margin-top: 10px;
 }
 
 /* Footer Styles */
