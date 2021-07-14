@@ -1,7 +1,7 @@
-/* fonts */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-/* normalize */
+/* Normalize */
 * {
   margin: 0;
   padding: 0;
@@ -21,14 +21,14 @@ input:focus {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 p {
   line-height: 26px;
 }
 
-/* Utilities  */
+/* Common CSS  */
 .container {
   width: 1080px;
   max-width: 100%;
@@ -38,27 +38,28 @@ p {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .half-width {
   width: 50%;
-  margin: 0 10px;
+  padding: 0 10px;
 }
 
 .width-1-of-4 {
   width: 25%;
-  margin: 0 10px;
+  padding: 0 15px;
 }
 
 .width-1-of-4:first-child,
 .half-width:first-child {
-  margin-left: 0;
+  padding-left: 0;
 }
 
 .width-1-of-4:last-child,
-.half-width:.half-width:first-child-child {
-  margin-right: 0;
+.half-width:last-child {
+  padding-right: 0;
 }
 
 .section-title {
@@ -85,7 +86,7 @@ p {
   color: #ffffff;
 }
 
-/* Button Styles */
+/* Button */
 .button {
   font-weight: 500;
   color: #ffffff;
@@ -111,7 +112,7 @@ p {
   border-color: #ffffff;
 }
 
-/* Banner Styles */
+/* Banner Area */
 #banner-area {
   background-color: #10437a;
   color: #ffffff;
@@ -133,7 +134,7 @@ p {
   transform: scale(0.95);
 }
 
-/* Players Styles */
+/* Players Area */
 #players-area {
   padding: 70px 0;
 }
@@ -161,12 +162,12 @@ p {
   margin-bottom: 15px;
 }
 
-/* Highlights Styles */
+/* Highlights Area */
 #highlights-area {
   padding: 50px 0 100px 0;
 }
 
-/* Stats Styles */
+/* Stats Area */
 #stats-area {
   padding: 60px 0 80px 0;
   background-color: #10437a;
@@ -188,7 +189,7 @@ p {
   font-size: 30px;
 }
 
-/* Newsletter Styles */
+/* Newsletter Area */
 #newsletter-area {
   padding: 60px 0 80px 0;
   background-color: #f7f7f7;
@@ -218,7 +219,7 @@ p {
   margin-top: 10px;
 }
 
-/* Footer Styles */
+/* Footer Area */
 #footer-area {
   padding: 50px 0;
   text-align: center;
@@ -226,6 +227,7 @@ p {
 
 .footer-logo {
   width: 480px;
+  max-width: 100%;
   margin: auto;
   line-height: 0;
 }
@@ -242,4 +244,96 @@ p {
   color: #969bab;
   background-color: #e7e7e8;
   margin: 0 5px;
+}
+
+/* Media Query */
+/* For Tablet Device */
+@media (max-width: 991px) {
+  /* Common CSS Responsive */
+  .width-1-of-4 {
+    width: 50%;
+    padding: 15px;
+  }
+
+  .width-1-of-4:nth-child(odd) {
+    padding-left: 0;
+  }
+
+  .width-1-of-4:nth-child(even) {
+    padding-right: 0;
+  }
+
+  .heading,
+  small-heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  /* Banner Area Responsive */
+  .banner-heading {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  /* Players Area Responsive */
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For Tablet Device */
+@media (max-width: 767px) {
+  /* Common CSS Responsive */
+  .flex {
+    flex-direction: column;
+  }
+
+  .half-width,
+  .width-1-of-4 {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .half-width {
+    padding: 20px 0;
+  }
+
+  .half-width:first-child,
+  .width-1-of-4:first-child {
+    padding-top: 0;
+  }
+
+  .half-width:last-child,
+  .width-1-of-4:last-child {
+    padding-bottom: 0;
+  }
+
+  /* Players Area Responsive */
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+  }
+
+  /* Footer Area Responsive */
+  .footer-logo {
+    width: 270px;
+  }
+
+  /* Sections Padding Responsive */
+  #banner-area {
+    padding: 60px 0;
+  }
+
+  #players-area {
+    padding: 45px 0;
+  }
+
+  #highlights-area {
+    padding: 15px 0 45px 0;
+  }
+
+  #stats-area,
+  #newsletter-area {
+    padding: 50px 0 60px 0;
+  }
 }
