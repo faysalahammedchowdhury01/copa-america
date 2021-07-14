@@ -156,7 +156,7 @@ p {
 
 /* Blog Area */
 #blog-area {
-  background-color: #f7f7f7;
+  background-color: #f1f1f1;
   padding: 60px 0 80px;
 }
 
@@ -336,7 +336,7 @@ p {
 
   /* Sections Padding Responsive */
   #banner-area {
-    padding: 60px 0;
+    padding: 90px 0 60px 0;
   }
 
   #players-area {
