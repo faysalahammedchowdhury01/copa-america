@@ -270,7 +270,7 @@ p {
 @media (max-width: 991px) {
   /* Common CSS Responsive */
   .heading,
-  small-heading {
+  .small-heading {
     font-size: 30px;
     line-height: 40px;
   }
