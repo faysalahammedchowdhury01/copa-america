@@ -141,7 +141,43 @@ p {
   margin-bottom: 15px;
 }
 
-/* highlights styles */
+/* Highlights Styles */
 #highlights-area {
   padding: 50px 0 100px 0;
+}
+
+/* Stats Styles */
+#stats-area {
+  padding: 60px 0 80px;
+  background-color: #10437a;
+}
+
+.stats {
+  margin-top: 25px;
+}
+
+.stats-box {
+  width: 25%;
+  margin: 0 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #2061a7;
+}
+
+.stats-box:first-child {
+  margin-left: 0;
+}
+
+.stats-box:last-child {
+  margin-right: 0;
+}
+
+.stats-label {
+  color: #dde8ff;
+  font-size: 15px;
+}
+
+.stats-value {
+  color: #ffffff;
+  font-size: 30px;
 }
